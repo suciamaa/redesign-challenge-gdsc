@@ -36,6 +36,8 @@ body {
   padding: 8px 25px;
   border-radius: 10px;
   font-size: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-secondary {
@@ -70,9 +72,9 @@ body {
 }
   
 .logo-wrap {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .logo-wrap img{
@@ -81,21 +83,21 @@ body {
 }
   
 .nav-active {
-    color: var(--text-100);
-    font-weight: bold;
-    text-decoration: underline var(--primary);
+  color: var(--text-100);
+  font-weight: bold;
+  text-decoration: underline var(--primary);
 }
   
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    color: var(--paragraph-text);
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  color: var(--paragraph-text);
 }
   
 nav ul li a {
-    color: var(--paragraph-text);
-    text-decoration: none;
+  color: var(--paragraph-text);
+  text-decoration: none;
 }
 
 .profile {
@@ -309,8 +311,9 @@ nav ul li a {
 }
 
 .events-card .btn-primary {
-  margin-top: auto;
-  padding: 10px 10px;
+  margin-top: 10px;
+  margin-left: 65px;
+  padding: 10px 50px;
   font-size: 12px;
   background-color: var(--primary);
   color: white;
@@ -320,7 +323,7 @@ nav ul li a {
 }
 
 .events-card .btn-primary:hover {
-  background-color: #d99d04;
+  background-color: #10439F;
 }
 
 /* explore */

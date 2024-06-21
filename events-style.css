@@ -1,0 +1,354 @@
+:root{
+    --primary: #FBBC04;
+    --text-1: #555353;
+    --text-2: #797979;
+    --text-3: #989898;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*button*/
+.button-primary,
+.button-primary:hover{
+    background-color: var(--primary);
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    cursor: pointer;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+  
+.glass-nav {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    color: black;
+}
+    
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+  
+.logo-wrap img{
+    width: 50px; 
+    height: auto;
+}
+
+.nav-active{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline var(--primary);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: var(--text-1);
+}
+
+nav ul li a{
+    color: var(--text-1);
+    text-decoration: none;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    padding: 100px;
+}
+
+.content-description img{
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--text-2);
+}
+
+.content-description h1{
+    margin-top: 20px;
+    font-size: 40px;
+    color: var(--text-1);
+}
+
+.content p{
+    margin-top: 25px;
+    font-size: 17px;
+    color: var(--text-2)
+}
+
+.event-date {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    margin-top: 30px;
+    border: 1px solid;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.event-date img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.date-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.event-explanation {
+    text-align: left; 
+    margin-top: 50px;
+}
+
+.event-explanation h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: var(--text-1)
+}
+
+.event-explanation p, .event-explanation ul {
+    margin-bottom: 10px;
+}
+
+.event-explanation ul {
+    list-style-type: none;
+}
+
+.event-explanation ul li {
+    display: flex;
+    align-items: center;
+    color: var(--text-2);
+}
+
+.event-explanation ul li::before {
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.event-explanation a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.event-explanation a:hover {
+    text-decoration: underline;
+}
+
+.event-keywords {
+    width: 25%; 
+    margin-top: 30px;
+}
+
+.event-keywords h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.event-keywords ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-keywords ul li {
+    margin-right: 7px;
+    padding: 5px 10px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.event-rsvp {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--text-2); 
+    border-radius: 8px;
+    text-align: center;
+    margin-top:50px;
+}
+
+.event-rsvp h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: var(--text-1);
+}
+
+.event-rsvp p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--text-2);
+}
+
+.event-rsvp .button-primary {
+    display: inline-block;
+    margin-top: 10px; 
+}
+
+/* Event speaker styling */
+.event-speaker-container {
+    width: 100%;
+}
+
+.event-speaker-container h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    color: var(--text-1);
+    text-align: center;
+}
+
+.event-speaker {
+    padding: 20px;
+    border: 1px solid var(--text-2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.speaker-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.speaker-info img {
+    width: 100px;
+    height: auto; 
+    margin-bottom: 5px; 
+}
+
+.speaker-details {
+    text-align: center;
+}
+
+.speaker-details h3{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.speaker-details p {
+    margin-bottom: 10px;
+}
+
+.speaker-details .button-primary {
+    margin-top: 10px;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 22px 86px;
+    margin-top: 50px;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-socmed-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gdsc-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 50px;
+  }
+  
+  .gdsc-logo-wrapper img {
+    width: fit-content;
+    align-self: center;
+    width: 10%;
+  }
+  
+  .gdsc-logo-wrapper h5{
+    margin-top: 8px;
+    color: var(--secondary);
+    font-size: 16px;
+    align-items: center;
+    align-self: center;
+  }
+  
+  .socmed {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-self: center;
+  }
+  
+  .socmed svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #4B70F5;
+  }
+  
+  footer .footer-socmed-wrapper p {
+    margin-top: 30px;
+    color: var(--text-400);
+  }
+  
+  footer .footer-links {
+    margin-right: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--secondary);
+    padding-bottom: 20px;
+  }
+  
+  footer .footer-links .links svg{
+    color: var(--secondary);
+    margin-top: 0px;
+  }
+  
+  footer .footer-links .links a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 12px;
+  }

@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+}
+
+:root {
+    --primary: #4285F4;
+    --primary-100: #555353;
+    --secondary: #797979;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    align-items: center;
+    width: 100%; /* Memenuhi lebar layar */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    color: var(--primary-100);
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9); /* Tambahkan warna latar belakang untuk kesesuaian */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-wrap img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-active {
+    color: var(--text-100);
+    font-weight: bold;
+    text-decoration: underline var(--primary);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    color: var(--paragraph-text);
+}
+
+nav ul li a {
+    color: var(--paragraph-text);
+    text-decoration: none;
+}
+
+/* profile */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-header {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.profile-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/profile\ -header-bg.jpg') no-repeat center center/cover;
+    opacity: 0.8;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.profile-header * {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-header h4 {
+    color: var(--primary-100);
+}
+
+.profile-header h6 {
+    color: var(--secondary);
+}
+
+.edit-button-container {
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.edit-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 70px;
+}
+
+.edit-button:hover {
+    background-color: white;
+    color: var(--primary);
+}
+
+.profile-image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.profile-position,
+.profile-role {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-100);
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid var(--primary);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.about-me-section {
+    color: var(--primary-100);
+    margin: 40px;
+    
+    
+}
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid var(--secondary);
+    max-width: 100%; 
+    margin-top: 20px;
+}
+
+.card-body {
+    font-size: 16px;
+    text-align: center; 
+    color: var(--secondary);
+}
+
+  
+
+/* footer */
+footer {
+    margin: 0 auto;
+    padding: 22px 86px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-socmed-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.gdsc-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.gdsc-logo-wrapper img {
+    width: fit-content;
+    align-self: center;
+    width: 10%;
+}
+
+.gdsc-logo-wrapper h5{
+    margin-top: 8px;
+    color: var(--secondary);
+    font-size: 16px;
+    align-items: center;
+    align-self: center;
+}
+
+.socmed {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-self: center;
+}
+
+.socmed img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #4B70F5;
+}
+
+footer .footer-socmed-wrapper p {
+  margin-top: 30px;
+  color: var(--text-400);
+}
+
+footer .footer-links {
+  margin-right: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--secondary);
+  padding-bottom: 20px;
+}
+
+footer .footer-links .links img{
+  color: var(--secondary);
+  margin-top: 0px;
+}
+
+footer .footer-links .links a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 12px;
+}  
+footer .footer-socmed-wrapper p {
+    margin-top: 30px;
+    color: var(--text-400);
+  }
+  
+footer .footer-links {
+    margin-right: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--secondary);
+    padding-bottom: 20px;
+}
+  
+footer .footer-links .links img{
+    color: var(--secondary);
+    margin-top: 0px;
+}
+  
+footer .footer-links .links a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 12px;
+}
