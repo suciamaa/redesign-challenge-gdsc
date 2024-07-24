@@ -311,8 +311,7 @@ nav ul li a {
 }
 
 .events-card .btn-primary {
-  margin-top: 10px;
-  margin-left: 65px;
+  margin: 10px 62px;
   padding: 10px 50px;
   font-size: 12px;
   background-color: var(--primary);
